@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://formspree.io; form-action 'self' mailto: https://formspree.io; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Fluffy AI Apps — Android &amp; iOS App Development, Design and Growth</title>
+  <meta name="description" content="Fluffy AI Apps designs, builds, publishes and grows Android and iOS apps — native and Flutter development, UI/UX design, ASO, user acquisition and monetization.">
+  <link rel="canonical" href="https://fluffyaiapps.com/">
+  <meta name="theme-color" content="#FBF8F5">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fluffy AI Apps">
+  <meta property="og:title" content="Fluffy AI Apps — Soft to the touch. Serious under the hood.">
+  <meta property="og:description" content="A mobile app company for Android and iOS: development, UI/UX design, publishing, ASO, user acquisition and monetization.">
+  <meta property="og:url" content="https://fluffyaiapps.com/">
+  <meta property="og:image" content="https://fluffyaiapps.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fluffy AI Apps logo — a soft gradient cloud — with the line Soft to the touch. Serious under the hood.">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fluffy AI Apps — Soft to the touch. Serious under the hood.">
+  <meta name="twitter:description" content="A mobile app company for Android and iOS: development, UI/UX design, publishing, ASO, user acquisition and monetization.">
+  <meta name="twitter:image" content="https://fluffyaiapps.com/assets/img/og-image.png">
+
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <link rel="preload" href="/assets/fonts/fraunces-soft.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script src="/assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://fluffyaiapps.com/#organization",
+        "name": "Fluffy AI Apps",
+        "url": "https://fluffyaiapps.com/",
+        "logo": "https://fluffyaiapps.com/assets/img/icon-512.png",
+        "email": "afex@fluffyaiapps.com",
+        "description": "Mobile app company specialising in Android and iOS app development, publishing, UI/UX design, app store optimization, user acquisition and monetization.",
+        "knowsAbout": ["Android app development", "iOS app development", "Flutter", "UI/UX design", "App store optimization", "User acquisition", "App monetization"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://fluffyaiapps.com/#website",
+        "url": "https://fluffyaiapps.com/",
+        "name": "Fluffy AI Apps",
+        "publisher": { "@id": "https://fluffyaiapps.com/#organization" },
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Shared logo symbol (kept rendered at 0×0 so its gradient works in every browser) -->
+  <svg class="sprite" aria-hidden="true" focusable="false" width="0" height="0">
+    <defs>
+      <linearGradient id="fluff-grad" x1="6" y1="36" x2="42" y2="10" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#FF9F82"/>
+        <stop offset=".38" stop-color="#F28DBB"/>
+        <stop offset=".7" stop-color="#A58CFF"/>
+        <stop offset="1" stop-color="#7FC2FF"/>
+      </linearGradient>
+      <symbol id="mark" viewBox="0 0 48 48">
+        <path fill="url(#fluff-grad)" d="M14 37a8 8 0 0 1-1.6-15.84A11 11 0 0 1 33.3 17.6 8.7 8.7 0 0 1 34.3 37H14Z"/>
+        <path fill="url(#fluff-grad)" d="M40 4.5c.4 2.9 1.6 4.1 4.5 4.5-2.9.4-4.1 1.6-4.5 4.5-.4-2.9-1.6-4.1-4.5-4.5 2.9-.4 4.1-1.6 4.5-4.5Z"/>
+      </symbol>
+      <linearGradient id="ink-grad" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#E9744F"/>
+        <stop offset=".4" stop-color="#D65597"/>
+        <stop offset=".75" stop-color="#7B5CF0"/>
+        <stop offset="1" stop-color="#3B8DE3"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Fluffy AI Apps — back to top">
+        <svg class="brand-mark" aria-hidden="true"><use href="#mark"/></svg>
+        <span class="brand-word">Fluffy<span class="brand-sub">AI Apps</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list" id="nav-list">
+          <li><a href="#about" data-nav>About</a></li>
+          <li><a href="#expertise" data-nav>Expertise</a></li>
+          <li><a href="#approach" data-nav>Approach</a></li>
+          <li><a href="#contact" data-nav>Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-ink btn-sm header-cta" href="#contact">Start a project</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+        <span class="sr-only">Open menu</span>
+        <span class="menu-bars" aria-hidden="true"><span></span><span></span></span>
+      </button>
+    </div>
+
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile" hidden data-mobile-menu>
+    <ul>
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#expertise" data-nav>Expertise</a></li>
+      <li><a href="#approach" data-nav>Approach</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <a class="btn btn-ink" href="#contact" data-nav>Start a project</a>
+    <p class="mobile-menu-mail"><a href="mailto:afex@fluffyaiapps.com">afex@fluffyaiapps.com</a></p>
+  </nav>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="aurora" aria-hidden="true">
+        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span>
+      </div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <p class="eyebrow hero-eyebrow load-in"><span class="dot" aria-hidden="true"></span>Mobile app studio · Android &amp; iOS</p>
+        <h1 class="hero-title load-in d1" id="hero-title">
+          Soft to the touch.<br>
+          <em class="ink-grad">Serious</em> under&nbsp;the&nbsp;hood.
+        </h1>
+        <p class="hero-lede load-in d2">Fluffy AI Apps designs, builds, publishes and grows apps for Android and iOS — calm, considered experiences on the outside, engineering and growth that hold up at scale on the inside.</p>
+        <div class="hero-ctas load-in d3">
+          <a class="btn btn-ink btn-lg" href="#contact">Start a project <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-glass btn-lg" href="#expertise">What we do</a>
+        </div>
+      </div>
+
+      <!-- Stage: the seven disciplines orbiting a single product -->
+      <div class="stage load-in d4" data-stage aria-hidden="true">
+        <div class="orbit-ring"></div>
+        <div class="orbit-ring r2"></div>
+        <div class="phone" data-phone>
+          <div class="phone-body">
+            <div class="phone-screen">
+              <div class="ps-island"></div>
+              <div class="ps-status"><span></span><span></span></div>
+              <div class="ps-hello"><span class="w60"></span><span class="w35"></span></div>
+              <div class="ps-card">
+                <svg class="ps-mark"><use href="#mark"/></svg>
+                <svg class="ps-wave" viewBox="0 0 200 60" preserveAspectRatio="none"><path d="M0 46C24 46 30 20 56 22S88 44 112 38 146 8 170 12 192 28 200 26" fill="none" stroke="rgba(255,255,255,.95)" stroke-width="3" stroke-linecap="round"/></svg>
+              </div>
+              <div class="ps-tiles"><span></span><span></span></div>
+              <div class="ps-list"><span></span><span></span><span></span></div>
+              <div class="ps-tabbar"><i class="on"></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </div>
+        <ul class="orbit" data-orbit>
+          <li class="pill" data-h="14"><b class="pd"></b>Android</li>
+          <li class="pill" data-h="330"><b class="pd"></b>iOS</li>
+          <li class="pill" data-h="205"><b class="pd"></b>Flutter</li>
+          <li class="pill" data-h="265"><b class="pd"></b>UI/UX design</li>
+          <li class="pill" data-h="160"><b class="pd"></b>ASO</li>
+          <li class="pill" data-h="30"><b class="pd"></b>User acquisition</li>
+          <li class="pill" data-h="290"><b class="pd"></b>Monetization</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-head">
+          <p class="eyebrow reveal">About us</p>
+          <h2 class="h2 reveal d1" id="about-title">We make apps that feel <em class="ink-grad">light</em>&nbsp;— and do the heavy lifting.</h2>
+        </div>
+        <div class="about-body">
+          <p class="lede reveal d1">Fluffy AI Apps is a mobile app company working across Android and iOS. We design, engineer, publish and grow apps as one continuous piece of work — from the first sketch to the hundredth update — so the choices that shape how an app feels, performs, gets found and earns are made together, by one team.</p>
+          <p class="lede muted reveal d2">Every decision is weighed against the same question: does this make the app easier to love?</p>
+        </div>
+
+        <ul class="beliefs">
+          <li class="belief reveal">
+            <span class="belief-ico" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="13" fill="none" stroke="url(#ink-grad)" stroke-width="2"/><circle cx="20" cy="20" r="6" fill="url(#ink-grad)" opacity=".85"/></svg>
+            </span>
+            <h3>Softness is a feature</h3>
+            <p>Calm interfaces, forgiving flows and motion that explains rather than decorates.</p>
+          </li>
+          <li class="belief reveal d1">
+            <span class="belief-ico" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><path d="M8 30h6v-6h6v-6h6v-6h6" fill="none" stroke="url(#ink-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="12" r="3" fill="url(#ink-grad)"/></svg>
+            </span>
+            <h3>Craft compounds</h3>
+            <p>Small, careful improvements shipped often beat big rewrites shipped rarely.</p>
+          </li>
+          <li class="belief reveal d2">
+            <span class="belief-ico" aria-hidden="true">
+              <svg viewBox="0 0 40 40"><path d="M20 7v26M7 20h26" stroke="url(#ink-grad)" stroke-width="2" stroke-linecap="round"/><circle cx="20" cy="20" r="13" fill="none" stroke="url(#ink-grad)" stroke-width="2" stroke-dasharray="3 5" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Growth is part of the product</h3>
+            <p>Store presence, acquisition and monetization are designed in from day one — not bolted on after launch.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EXPERTISE ============ -->
+    <section class="section expertise" id="expertise" aria-labelledby="expertise-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Our expertise</p>
+          <h2 class="h2 reveal d1" id="expertise-title">Everything an app needs, <em class="ink-grad">under one roof.</em></h2>
+          <p class="lede muted reveal d2">Platform engineering, product design and the growth work that happens after launch — handled by people who talk to each other every day.</p>
+        </div>
+
+        <div class="bento">
+          <article class="card c-android reveal">
+            <div class="card-art" aria-hidden="true">
+              <svg viewBox="0 0 220 140">
+                <rect x="70" y="10" width="80" height="150" rx="16" fill="#fff" stroke="#E7E1F0" stroke-width="2"/>
+                <rect x="80" y="30" width="60" height="34" rx="10" fill="url(#ink-grad)" opacity=".9"/>
+                <rect x="80" y="72" width="28" height="28" rx="14" fill="#E9F6EE"/><rect x="112" y="72" width="28" height="28" rx="8" fill="#EEE9FF"/>
+                <rect x="80" y="108" width="60" height="8" rx="4" fill="#EEEAF3"/><rect x="80" y="122" width="40" height="8" rx="4" fill="#EEEAF3"/>
+                <circle cx="110" cy="19" r="2.5" fill="#D9D2E6"/>
+                <rect x="160" y="96" width="44" height="44" rx="16" fill="#3DDC84" opacity=".22"/><path d="M174 118l6 6 12-12" stroke="#1F9D5A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="card-copy">
+              <h3>Android</h3>
+              <p>Native Kotlin and Jetpack Compose apps that respect the platform: Material patterns, fast cold starts and careful handling of the long tail of devices.</p>
+              <ul class="tags"><li>Kotlin</li><li>Jetpack Compose</li><li>Google Play</li></ul>
+            </div>
+          </article>
+
+          <article class="card c-ios reveal d1">
+            <div class="card-art" aria-hidden="true">
+              <svg viewBox="0 0 220 140">
+                <rect x="70" y="10" width="80" height="150" rx="22" fill="#fff" stroke="#E7E1F0" stroke-width="2"/>
+                <rect x="96" y="18" width="28" height="8" rx="4" fill="#1A1430"/>
+                <rect x="80" y="36" width="60" height="44" rx="14" fill="#F3EEFF"/>
+                <circle cx="96" cy="58" r="9" fill="url(#ink-grad)"/><rect x="110" y="52" width="22" height="5" rx="2.5" fill="#CFC5E8"/><rect x="110" y="61" width="14" height="5" rx="2.5" fill="#E2DBF2"/>
+                <rect x="80" y="88" width="60" height="22" rx="11" fill="#1A1430"/><rect x="96" y="96" width="28" height="6" rx="3" fill="#fff" opacity=".85"/>
+                <rect x="80" y="118" width="60" height="7" rx="3.5" fill="#EEEAF3"/>
+                <rect x="16" y="88" width="44" height="44" rx="16" fill="#93CFFF" opacity=".28"/><path d="M38 100v20M28 110h20" stroke="#2F7FD0" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="card-copy">
+              <h3>iOS</h3>
+              <p>Swift and SwiftUI apps that feel at home on iPhone and iPad, built to the Human Interface Guidelines and ready for App Store review.</p>
+              <ul class="tags"><li>Swift</li><li>SwiftUI</li><li>App Store</li></ul>
+            </div>
+          </article>
+
+          <article class="card c-flutter reveal">
+            <div class="card-art" aria-hidden="true">
+              <svg viewBox="0 0 220 140">
+                <rect x="24" y="44" width="70" height="56" rx="14" fill="#fff" stroke="#E7E1F0" stroke-width="2"/>
+                <path d="M40 72h38M40 82h24" stroke="#CFC5E8" stroke-width="5" stroke-linecap="round"/><path d="M40 60h20" stroke="url(#ink-grad)" stroke-width="5" stroke-linecap="round"/>
+                <path d="M100 72h14" stroke="#B9AEDA" stroke-width="2" stroke-dasharray="3 4"/>
+                <path d="M114 72c16 0 16-34 34-34M114 72c16 0 16 34 34 34" fill="none" stroke="url(#ink-grad)" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="150" y="22" width="48" height="32" rx="10" fill="#E9F6EE"/><rect x="150" y="90" width="48" height="32" rx="10" fill="#EAF4FF"/>
+                <text x="174" y="43" text-anchor="middle" font-size="11" font-weight="700" fill="#1F9D5A" font-family="ui-sans-serif,system-ui">AND</text>
+                <text x="174" y="111" text-anchor="middle" font-size="11" font-weight="700" fill="#2F7FD0" font-family="ui-sans-serif,system-ui">iOS</text>
+              </svg>
+            </div>
+            <div class="card-copy">
+              <h3>Flutter</h3>
+              <p>One codebase for both platforms when speed matters, with native platform channels where native code earns its place.</p>
+              <ul class="tags"><li>Dart</li><li>Cross-platform</li><li>Platform channels</li></ul>
+            </div>
+          </article>
+
+          <article class="card c-design reveal d1">
+            <div class="card-art" aria-hidden="true">
+              <svg viewBox="0 0 220 140">
+                <rect x="34" y="26" width="96" height="76" rx="14" fill="#fff" stroke="#E7E1F0" stroke-width="2"/>
+                <rect x="78" y="46" width="104" height="76" rx="14" fill="#FFF6F2" stroke="#F6D6CA" stroke-width="2"/>
+                <circle cx="104" cy="74" r="12" fill="url(#ink-grad)"/><rect x="124" y="66" width="44" height="6" rx="3" fill="#F2C6B6"/><rect x="124" y="78" width="30" height="6" rx="3" fill="#F8DDD3"/>
+                <rect x="94" y="96" width="74" height="14" rx="7" fill="#1A1430"/>
+                <path d="M170 30l14 34-10-3-6 10z" fill="#1A1430" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="card-copy">
+              <h3>UI/UX design</h3>
+              <p>Research-led flows, design systems and prototypes, tested with real people before a line of production code is written.</p>
+              <ul class="tags"><li>Product design</li><li>Design systems</li><li>Prototyping</li></ul>
+            </div>
+          </article>
+
+          <article class="card c-aso reveal d2">
+            <div class="card-art" aria-hidden="true">
+              <svg viewBox="0 0 220 140">
+                <rect x="30" y="20" width="160" height="30" rx="15" fill="#fff" stroke="#E7E1F0" stroke-width="2"/>
+                <circle cx="50" cy="35" r="6" fill="none" stroke="#7B5CF0" stroke-width="2.5"/><path d="M54.5 39.5l4 4" stroke="#7B5CF0" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="66" y="31" width="70" height="8" rx="4" fill="#E2DBF2"/>
+                <rect x="40" y="96" width="22" height="26" rx="6" fill="#EEE9FF"/><rect x="72" y="82" width="22" height="40" rx="6" fill="#E3DAFF"/><rect x="104" y="70" width="22" height="52" rx="6" fill="#CDBDFF"/><rect x="136" y="60" width="22" height="62" rx="6" fill="url(#ink-grad)"/>
+                <path d="M168 76l12-14 8 8" fill="none" stroke="#D65597" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="card-copy">
+              <h3>ASO</h3>
+              <p>Keyword research, store listings, screenshots and localized metadata that help the right people find the app.</p>
+              <ul class="tags"><li>Keywords</li><li>Store creatives</li><li>Localization</li></ul>
+            </div>
+          </article>
+
+          <article class="card c-ua reveal">
+            <div class="card-art" aria-hidden="true">
+              <svg viewBox="0 0 220 140">
+                <g fill="#CDBDFF"><circle cx="30" cy="30" r="5"/><circle cx="50" cy="22" r="5"/><circle cx="44" cy="44" r="5"/><circle cx="26" cy="56" r="5"/><circle cx="48" cy="66" r="5"/><circle cx="30" cy="82" r="5"/><circle cx="52" cy="92" r="5"/><circle cx="28" cy="108" r="5"/><circle cx="50" cy="116" r="5"/></g>
+                <path d="M70 20h50l-14 40v40l-22 16V60z" fill="#F3EEFF" stroke="#D9CEF7" stroke-width="2" stroke-linejoin="round"/>
+                <g fill="url(#ink-grad)"><circle cx="150" cy="56" r="7"/><circle cx="172" cy="70" r="7"/><circle cx="152" cy="86" r="7"/></g>
+                <path d="M124 70h12" stroke="#B9AEDA" stroke-width="2" stroke-dasharray="3 4"/>
+                <path d="M144 112h48" stroke="#1A1430" stroke-width="3" stroke-linecap="round"/><path d="M144 112h30" stroke="#D65597" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="card-copy">
+              <h3>User acquisition</h3>
+              <p>Measured paid and organic growth, with attribution set up properly so every channel is judged by the users it actually keeps.</p>
+              <ul class="tags"><li>Paid social &amp; search</li><li>Attribution</li><li>Creative testing</li></ul>
+            </div>
+          </article>
+
+          <article class="card c-money reveal d1">
+            <div class="card-art" aria-hidden="true">
+              <svg viewBox="0 0 220 140">
+                <rect x="30" y="18" width="92" height="108" rx="16" fill="#fff" stroke="#E7E1F0" stroke-width="2"/>
+                <rect x="42" y="32" width="68" height="10" rx="5" fill="#E2DBF2"/>
+                <rect x="42" y="52" width="68" height="24" rx="10" fill="#FFF1EC" stroke="#F2C6B6" stroke-width="2"/>
+                <rect x="42" y="82" width="68" height="24" rx="10" fill="#F3EEFF" stroke="url(#ink-grad)" stroke-width="2"/>
+                <circle cx="54" cy="94" r="4" fill="url(#ink-grad)"/><rect x="64" y="91" width="34" height="6" rx="3" fill="#CDBDFF"/>
+                <path d="M136 112c14 0 18-22 30-26s14-24 34-30" fill="none" stroke="url(#ink-grad)" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="200" cy="56" r="6" fill="#fff" stroke="#D65597" stroke-width="3"/>
+              </svg>
+            </div>
+            <div class="card-copy">
+              <h3>Monetization</h3>
+              <p>Subscriptions, in-app purchases and ads designed around user value — clear paywalls, fair trials and pricing that is tested, not guessed.</p>
+              <ul class="tags"><li>Subscriptions</li><li>In-app purchases</li><li>Ad mediation</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="section approach" id="approach" aria-labelledby="approach-title">
+      <div class="approach-glow" aria-hidden="true"></div>
+      <div class="container approach-grid">
+        <div class="approach-side">
+          <p class="eyebrow on-dark reveal">Our approach</p>
+          <h2 class="h2 on-dark reveal d1" id="approach-title">Four promises we make to every product.</h2>
+          <p class="lede on-dark-muted reveal d2">They are how we decide what to build, how we build it, and when something is ready to ship.</p>
+          <div class="approach-progress" aria-hidden="true"><span data-progress></span></div>
+        </div>
+
+        <ol class="principles" data-principles>
+          <li class="principle reveal">
+            <span class="p-num">01</span>
+            <div>
+              <h3>Product innovation</h3>
+              <p>We start from the problem, not the feature list. Ideas are prototyped quickly, put in front of users early, and kept only if they earn their place.</p>
+              <ul class="p-points"><li>Problem-first discovery</li><li>Fast, disposable prototypes</li><li>Evidence over opinion</li></ul>
+            </div>
+          </li>
+          <li class="principle reveal">
+            <span class="p-num">02</span>
+            <div>
+              <h3>Quality</h3>
+              <p>Performance, accessibility and stability are treated as features. Releases pass automated tests, real-device testing and staged rollouts before they reach everyone.</p>
+              <ul class="p-points"><li>Automated &amp; device testing</li><li>Accessibility from the first screen</li><li>Staged rollouts, crash monitoring</li></ul>
+            </div>
+          </li>
+          <li class="principle reveal">
+            <span class="p-num">03</span>
+            <div>
+              <h3>Scalability</h3>
+              <p>Architecture, infrastructure and process are built to grow with the product — so the hundredth feature is as safe to ship as the first.</p>
+              <ul class="p-points"><li>Modular, documented codebases</li><li>Infrastructure that scales on demand</li><li>Analytics you can trust</li></ul>
+            </div>
+          </li>
+          <li class="principle reveal">
+            <span class="p-num">04</span>
+            <div>
+              <h3>User experience</h3>
+              <p>Every screen is judged by how it feels to use: fewer steps, clearer language, motion with meaning and respect for people's time and attention.</p>
+              <ul class="p-points"><li>Clear, humane copy</li><li>Motion that explains</li><li>No dark patterns</li></ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="aurora soft" aria-hidden="true"><span class="blob b2"></span><span class="blob b3"></span></div>
+      <div class="container contact-grid">
+        <div class="contact-intro">
+          <p class="eyebrow reveal">Contact us</p>
+          <h2 class="h2 reveal d1" id="contact-title">Let's make something people <em class="ink-grad">love to open.</em></h2>
+          <p class="lede muted reveal d2">Tell us about your app, your idea, or the problem you're stuck on. Every message is read by a person, and we reply personally.</p>
+
+          <dl class="contact-facts reveal d3">
+            <div>
+              <dt>Email</dt>
+              <dd><a class="link" href="mailto:afex@fluffyaiapps.com">afex@fluffyaiapps.com</a></dd>
+            </div>
+            <div>
+              <dt>Platforms</dt>
+              <dd>Android · iOS · Flutter</dd>
+            </div>
+            <div>
+              <dt>Working with</dt>
+              <dd>Founders, product teams and publishers worldwide</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="form-card reveal d2">
+          <!--
+            Delivery: set data-endpoint to a form backend URL (e.g. https://formspree.io/f/XXXXXXXX)
+            to receive messages directly. While it is empty, the form validates and then opens
+            the visitor's email app with the message pre-filled to data-email.
+          -->
+          <form class="contact-form" id="contact-form" novalidate data-endpoint="" data-email="afex@fluffyaiapps.com" aria-describedby="form-note">
+            <div class="field-row">
+              <div class="field">
+                <label for="f-name">Your name</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="80" aria-describedby="e-name">
+                <p class="field-error" id="e-name" data-error-for="name"></p>
+              </div>
+              <div class="field">
+                <label for="f-email">Work email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="120" aria-describedby="e-email">
+                <p class="field-error" id="e-email" data-error-for="email"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-company">Company or project <span class="opt">(optional)</span></label>
+              <input id="f-company" name="company" type="text" autocomplete="organization" maxlength="100">
+            </div>
+
+            <fieldset class="field">
+              <legend>What can we help with?</legend>
+              <div class="chips">
+                <label class="chip"><input type="checkbox" name="topics" value="App development"><span>App development</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="UI/UX design"><span>UI/UX design</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="Publishing"><span>Publishing</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="ASO"><span>ASO</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="User acquisition"><span>User acquisition</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="Monetization"><span>Monetization</span></label>
+                <label class="chip"><input type="checkbox" name="topics" value="Something else"><span>Something else</span></label>
+              </div>
+            </fieldset>
+
+            <div class="field">
+              <label for="f-message">Tell us a little more</label>
+              <textarea id="f-message" name="message" rows="5" required minlength="20" maxlength="3000" aria-describedby="e-message m-count"></textarea>
+              <div class="field-foot">
+                <p class="field-error" id="e-message" data-error-for="message"></p>
+                <span class="count" id="m-count" data-count>0 / 3000</span>
+              </div>
+            </div>
+
+            <!-- Honeypot: hidden from people, tempting to bots -->
+            <div class="hp" aria-hidden="true">
+              <label for="f-website">Leave this field empty</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <label class="consent">
+              <input type="checkbox" name="consent" required aria-describedby="e-consent">
+              <span>I agree that Fluffy AI Apps may use these details to reply to me, as described in the <a class="link" href="/privacy.html">privacy policy</a>.</span>
+            </label>
+            <p class="field-error" id="e-consent" data-error-for="consent"></p>
+
+            <div class="form-foot">
+              <p class="form-note" id="form-note">We never share your details or add you to a mailing list.</p>
+              <button class="btn btn-ink btn-lg" type="submit" data-submit>
+                <span data-submit-label>Send message</span> <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+            <p class="form-status" role="status" aria-live="polite" data-status></p>
+          </form>
+
+          <div class="form-success" hidden data-success tabindex="-1">
+            <svg class="success-mark" aria-hidden="true"><use href="#mark"/></svg>
+            <h3 data-success-title>Thank you — message received.</h3>
+            <p data-success-body>We'll get back to you at the address you gave us.</p>
+            <button class="btn btn-glass" type="button" data-reset>Send another message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Fluffy AI Apps — back to top">
+          <svg class="brand-mark" aria-hidden="true"><use href="#mark"/></svg>
+          <span class="brand-word">Fluffy<span class="brand-sub">AI Apps</span></span>
+        </a>
+        <p class="footer-tag">Soft to the touch. Serious under the hood.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="/privacy.html">Privacy</a></li>
+        </ul>
+      </nav>
+      <p class="footer-mail"><a class="link" href="mailto:afex@fluffyaiapps.com">afex@fluffyaiapps.com</a></p>
+    </div>
+    <div class="container footer-base">
+      <p>© <span data-year>2026</span> Fluffy AI Apps. All rights reserved.</p>
+      <p>Android is a trademark of Google LLC. iOS is a trademark or registered trademark of Cisco in the U.S. and other countries, used under license by Apple Inc.</p>
+    </div>
+  </footer>
+</body>
+</html>
